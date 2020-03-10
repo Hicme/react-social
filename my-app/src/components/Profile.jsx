@@ -1,24 +1,24 @@
 import React from 'react'
+import styles from '../assets/css/Profile.module.scss';
 
 const Profile = () => (
-  <div className="content">
+  <div className={styles.content}>
     <div>
       <img src="https://www.bigstockphoto.com/images/homepage/module-6.jpg" alt="#" />
     </div>
     <div>
       ava + descr
-      </div>
+    </div>
     <div>
-      My posts
-        <div>
-        new post
+      <h2>My posts</h2>
+      <div className={styles.posts}>
+        <div className={styles.item}>
+          post 1
         </div>
-      <div>
-        post 1
+        <div className={styles.item}>
+          post 2
         </div>
-      <div>
-        post 2
-        </div>
+      </div>
     </div>
   </div>
 )
